@@ -1,9 +1,8 @@
 import './ProductsItem.scss';
 import {useEffect, useState} from "react";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
-import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js";
-import products from "../Products";
+import { initializeApp } from "firebase/app";
+//import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getDatabase, ref, get } from "firebase/database";
 
 function ProductsItem(props) {
     // Your web app's Firebase configuration
