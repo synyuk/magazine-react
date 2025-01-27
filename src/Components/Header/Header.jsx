@@ -1,6 +1,6 @@
 import "./Header.scss";
-import logo from "../../assets/img/logo.svg";
-import authIcon from "../../assets/img/icons/auth.svg";
+import logo from "../../../public/assets/img/logo.svg";
+import authIcon from "../../../public/assets/img/icons/auth.svg";
 
 function Header() {
     return (

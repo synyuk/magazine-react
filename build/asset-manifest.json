@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/magazine-react/static/css/main.44c9e75c.css",
+    "main.js": "/magazine-react/static/js/main.f05893d6.js",
+    "static/media/clock.webp": "/magazine-react/static/media/clock.d60c78e25961194f11f7.webp",
+    "static/media/diagram.png": "/magazine-react/static/media/diagram.6bbed40ac49e16cf7b6a.png",
+    "static/media/customer.svg": "/magazine-react/static/media/customer.ae72f0eb875dbfa1c3fc6235a420b402.svg",
+    "static/media/project.svg": "/magazine-react/static/media/project.82e6481bfe1f18dc5a3d643f531e1f1d.svg",
+    "static/media/logo.svg": "/magazine-react/static/media/logo.fb2696dfab29aa89f470e8506003ab07.svg",
+    "index.html": "/magazine-react/index.html",
+    "static/media/auth.svg": "/magazine-react/static/media/auth.6524d156e6810254e27752d1eab993a2.svg",
+    "main.44c9e75c.css.map": "/magazine-react/static/css/main.44c9e75c.css.map",
+    "main.f05893d6.js.map": "/magazine-react/static/js/main.f05893d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44c9e75c.css",
+    "static/js/main.f05893d6.js"
+  ]
+}

@@ -2,7 +2,7 @@
 <p><b>DESCRIPTION</b>:</p> 
 <p>page for play with data</p>
 
-![MVC](src/assets/img/screenshot.png)
+![MVC](public/assets/img/screenshot.png)
 
 <p>OPTIONS:</p>
 <p>react</p>
