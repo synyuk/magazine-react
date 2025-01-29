@@ -17,6 +17,10 @@ body {
   }
 }
 
+section {
+  padding: 60px 0;
+}
+
 .container {
   display: block;
   max-width: 1200px;

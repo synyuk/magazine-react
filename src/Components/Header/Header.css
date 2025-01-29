@@ -34,10 +34,10 @@ header .cta {
   gap: 10px;
   flex-direction: row;
 }
-header .cta .modal-auth-btn {
+header .cta .modal-auth-btn, header .cta .backet-link {
   display: flex;
 }
-header .cta .modal-auth-btn img {
+header .cta .modal-auth-btn img, header .cta .backet-link img {
   width: 54px;
   height: 54px;
 }
@@ -90,6 +90,9 @@ header nav ul li a {
   color: #000;
   text-decoration: none;
   transition: 0.2s all;
+}
+header nav ul li a.active {
+  text-decoration: underline;
 }
 @media (max-width: 1024px) {
   header nav ul li a {

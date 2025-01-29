@@ -1,0 +1,18 @@
+h1{
+  font-size: 24px;
+}
+
+.product-wrapper{
+  display: flex;
+  gap: 20px;
+}
+.product-description{
+  display: flex;
+  flex-direction: column;
+}
+.product-item-pic{
+  min-width: 200px;
+  img{
+    width: 100%;
+  }
+}

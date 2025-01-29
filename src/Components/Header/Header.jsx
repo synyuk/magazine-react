@@ -1,6 +1,8 @@
 import "./Header.scss";
-import logo from "../../../public/assets/img/logo.svg";
-import authIcon from "../../../public/assets/img/icons/auth.svg";
+import logo from "../../assets/img/logo.svg";
+import authIcon from "../../assets/img/icons/auth.svg";
+import basketIcon from "../../assets/img/icons/basket-icon.svg";
+import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
@@ -10,16 +12,24 @@ function Header() {
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/company">Company</a>
+                    </li>
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
                 </ul>
             </nav>
             <div className="cta">
                 <button className="main-btn">Get Started</button>
-                <a className="modal-auth-btn" href="#"><img src={authIcon} alt="Autorization"/></a>
+                {/*<a className="modal-auth-btn" href="#"><img src={authIcon} alt="Autorization"/></a>*/}
+                <a className="backet-link" href="#"><img src={basketIcon} alt="Basket"/></a>
             </div>
             <div className="menu-toggle" id="mobile-menu">
                 <span className="bar"></span>

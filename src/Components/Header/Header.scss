@@ -1,4 +1,4 @@
-@import "../../../public/assets/css/variables";
+@import "../../assets/css/variables";
 
 header {
   position: sticky;
@@ -37,7 +37,7 @@ header {
     gap: 10px;
     flex-direction: row;
 
-    .modal-auth-btn {
+    .modal-auth-btn, .backet-link {
       display: flex;
 
       img {
@@ -96,6 +96,9 @@ header {
           color: #000;
           text-decoration: none;
           transition: 0.2s all;
+          &.active{
+            text-decoration: underline;
+          }
           @media (max-width: $tablet) {
             font-size: 36px;
             text-transform: uppercase;

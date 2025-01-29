@@ -1,8 +1,8 @@
 import "./Hero.scss"
-import projectPic from "../../../public/assets/img/icons/project.svg"
-import diagramPic from "../../../public/assets/img/hero/diagram.png"
-import clockPic from "../../../public/assets/img/hero/clock.webp"
-import customerPic from "../../../public/assets/img/icons/customer.svg"
+import projectPic from "../../assets/img/icons/project.svg"
+import diagramPic from "../../assets/img/hero/diagram.png"
+import clockPic from "../../assets/img/hero/clock.webp"
+import customerPic from "../../assets/img/icons/customer.svg"
 
 function Hero() {
     return (

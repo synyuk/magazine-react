@@ -3,6 +3,8 @@ import {useEffect, useState} from "react";
 import { initializeApp } from "firebase/app";
 //import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { getDatabase, ref, get } from "firebase/database";
+import {NavLink} from "react-router";
+import { useNavigate } from "react-router-dom";
 
 function ProductsItem(props) {
     // Your web app's Firebase configuration
@@ -23,8 +25,7 @@ function ProductsItem(props) {
     const database = getDatabase(app);
     const dbRef = ref(database, '/products/');
 
-    const [data, setProducts] = useState([]);
-    const massLenght = data.length;
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
         get(dbRef).then((snapshot) => {
@@ -39,23 +40,24 @@ function ProductsItem(props) {
         });
     }, [])
 
+    const navigate = useNavigate();
 
     return (
-            <div className="products-list-item">
-                <div className="products-list-pic">
-                    <img src={
-                data.map((product) => (product.pic))
-            } alt=""/>
+        products.map((product) =>
+            <div className="product" key={`${product.id}`}>
+                <div className="product-image">
+                    <img src={`${process.env.PUBLIC_URL}/${product.pic}`} alt=""/>
                 </div>
-                <div className="products-list-name">{
-                    data.map((product) => (product.name))
-                }</div>
-                <div className="products-list-price">{
-                    data.map((product) => (product.price))
-                }</div>
+                <div className="product-company">{product.company}</div>
+                <div className="product-name">{product.name}</div>
+                <div className="product-bottom">
+                    <div className="product-price">{product.price}</div>
+                    <div onClick={() => navigate(`/product/${product.id}`)} className="product-show">Show more</div>
+                    <div className="product-add">Add +</div>
+                </div>
             </div>
+        )
     )
-
 }
 
 export default ProductsItem;
