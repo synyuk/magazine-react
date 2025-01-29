@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/magazine-react/static/css/main.0ba60353.css",
-    "main.js": "/magazine-react/static/js/main.f35c068f.js",
+    "main.js": "/magazine-react/static/js/main.b65d60f7.js",
     "static/media/clock.webp": "/magazine-react/static/media/clock.d60c78e25961194f11f7.webp",
     "static/media/diagram.png": "/magazine-react/static/media/diagram.6bbed40ac49e16cf7b6a.png",
     "static/media/customer.svg": "/magazine-react/static/media/customer.ae72f0eb875dbfa1c3fc6235a420b402.svg",
@@ -12,10 +12,10 @@
     "static/media/basket-icon.svg": "/magazine-react/static/media/basket-icon.68567bac306425639c25107e509e1d5c.svg",
     "static/media/arrow.svg": "/magazine-react/static/media/arrow.a2ea4d7a8bffb739aa6a.svg",
     "main.0ba60353.css.map": "/magazine-react/static/css/main.0ba60353.css.map",
-    "main.f35c068f.js.map": "/magazine-react/static/js/main.f35c068f.js.map"
+    "main.b65d60f7.js.map": "/magazine-react/static/js/main.b65d60f7.js.map"
   },
   "entrypoints": [
     "static/css/main.0ba60353.css",
-    "static/js/main.f35c068f.js"
+    "static/js/main.b65d60f7.js"
   ]
 }
