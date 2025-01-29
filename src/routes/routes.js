@@ -9,7 +9,7 @@ import ProductPage from "../Components/Products/ProductsInfo/ProductPage";
 
 const router = createBrowserRouter([
         {
-            path: "/",
+            path: "magazine-react/",
             element: (
                 <>
                     <Hero />
@@ -18,24 +18,24 @@ const router = createBrowserRouter([
             )
         },
         {
-            path: "/product",
+            path: "magazine-react/product",
             children: [
                 {
-                    path: "/product/:id",
+                    path: "magazine-react/product/:id",
                     element: <ProductPage />,
                 },
             ]
         },
         {
-            path: "/about",
+            path: "magazine-react/about",
             element: <About />
         },
         {
-            path: "/company",
+            path: "magazine-react/company",
             element: <Company />
         },
         {
-            path: "/blog",
+            path: "magazine-react/blog",
             element: <Blog />
         }
     ]
