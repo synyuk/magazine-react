@@ -23,7 +23,7 @@ function ProductsItem(props) {
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const database = getDatabase(app);
-    const dbRef = ref(database, '/products/');
+    const dbRef = ref(database, 'magazine-react/products/');
 
     const [products, setProducts] = useState([]);
 
@@ -52,7 +52,7 @@ function ProductsItem(props) {
                 <div className="product-name">{product.name}</div>
                 <div className="product-bottom">
                     <div className="product-price">{product.price}</div>
-                    <div onClick={() => navigate(`/product/${product.id}`)} className="product-show">Show more</div>
+                    <div onClick={() => navigate(`magazine-react/product/${product.id}`)} className="product-show">Show more</div>
                     <div className="product-add">Add +</div>
                 </div>
             </div>
