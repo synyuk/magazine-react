@@ -13,16 +13,16 @@ function Header() {
             <nav>
                 <ul>
                     <li>
-                        <a href="magazine-react/">Home</a>
+                        <a href="/magazine-react/">Home</a>
                     </li>
                     <li>
-                        <a href="magazine-react/about">About</a>
+                        <a href="/magazine-react/about">About</a>
                     </li>
                     <li>
-                        <a href="magazine-react/company">Company</a>
+                        <a href="/magazine-react/company">Company</a>
                     </li>
                     <li>
-                        <a href="magazine-react/blog">Blog</a>
+                        <a href="/magazine-react/blog">Blog</a>
                     </li>
                 </ul>
             </nav>
