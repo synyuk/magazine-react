@@ -38,7 +38,24 @@ header {
     flex-direction: row;
 
     .modal-auth-btn, .backet-link {
+      position: relative;
       display: flex;
+
+      .counter{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -5px;
+        top: -5px;
+        border-radius: 24px;
+        background-color: #247e8a;
+        color: #ffffff;
+        font-size: 10px;
+        height: 18px;
+        min-width: 18px;
+        padding: 0 2px;
+      }
 
       img {
         width: 54px;

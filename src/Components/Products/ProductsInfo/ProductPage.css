@@ -4,7 +4,7 @@ h1 {
 
 .product-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .product-description {
@@ -12,11 +12,8 @@ h1 {
   flex-direction: column;
 }
 
-.product-item-pic {
-  min-width: 200px;
-}
 .product-item-pic img {
-  width: 100%;
+  width: 100px;
 }
 
 /*# sourceMappingURL=ProductPage.css.map */

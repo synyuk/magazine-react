@@ -35,7 +35,23 @@ header .cta {
   flex-direction: row;
 }
 header .cta .modal-auth-btn, header .cta .backet-link {
+  position: relative;
   display: flex;
+}
+header .cta .modal-auth-btn .counter, header .cta .backet-link .counter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -5px;
+  top: -5px;
+  border-radius: 24px;
+  background-color: #247e8a;
+  color: #ffffff;
+  font-size: 10px;
+  height: 18px;
+  min-width: 18px;
+  padding: 0 2px;
 }
 header .cta .modal-auth-btn img, header .cta .backet-link img {
   width: 54px;

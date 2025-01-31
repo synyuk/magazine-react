@@ -1,5 +1,6 @@
 {
-  "homepage": "https://synyuk.github.io/magazine-react/",
+  "homepage": "https://synyuk.github.io/magazine-react",
+  "name": "magazine-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

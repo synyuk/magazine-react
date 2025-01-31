@@ -4,39 +4,73 @@ import About from "../Pages/About";
 import Company from "../Pages/Company";
 import Blog from "../Pages/Blog";
 import Hero from "../Components/Hero/Hero";
-import ProductsInfo from "../Components/Products/ProductsInfo/ProductPage";
 import ProductPage from "../Components/Products/ProductsInfo/ProductPage";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
+import Basket from "../Components/Basket/Basket";
 
 const router = createBrowserRouter([
         {
-            path: "/magazine-react/",
+            path: "/magazine-react",
             element: (
                 <>
+                    <Header />
                     <Hero />
                     <Products />
+                    <Footer />
                 </>
             )
         },
         {
-            path: "/product",
+            path: "/magazine-react/product",
             children: [
                 {
-                    path: "/product/:id",
-                    element: <ProductPage />,
+                    path: "/magazine-react/product/:id",
+                    element:
+                        <>
+                            <Header />
+                            <ProductPage />
+                            <Footer />
+                        </>
                 },
             ]
         },
         {
-            path: "magazine-react/about",
-            element: <About />
+            path: "/magazine-react/about",
+            element:
+                <>
+                    <Header />
+                    <About />
+                    <Footer />
+                </>
         },
         {
-            path: "magazine-react/company",
-            element: <Company />
+            path: "/magazine-react/company",
+            element:
+                <>
+                    <Header />
+                    <Company />
+                    <Footer />
+                </>
+
         },
         {
-            path: "magazine-react/blog",
-            element: <Blog />
+            path: "/magazine-react/blog",
+            element:
+                <>
+                    <Header />
+                    <Blog />
+                    <Footer />
+                </>
+        },
+        {
+            path: "/magazine-react/basket",
+            element:
+                <>
+                    <Header />
+                    <Basket />
+                    <Footer />
+                </>
         }
     ]
 )

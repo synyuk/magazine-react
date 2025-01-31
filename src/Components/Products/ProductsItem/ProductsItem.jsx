@@ -1,10 +1,12 @@
 import './ProductsItem.scss';
-import {useEffect, useState} from "react";
+import {useEffect, useState, useContext} from "react";
 import { initializeApp } from "firebase/app";
 //import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { getDatabase, ref, get } from "firebase/database";
-import {NavLink} from "react-router";
 import { useNavigate } from "react-router-dom";
+import { useMyContext } from "../../../App";
+
+
 
 function ProductsItem(props) {
     // Your web app's Firebase configuration
@@ -25,7 +27,9 @@ function ProductsItem(props) {
     const database = getDatabase(app);
     const dbRef = ref(database, '/products/');
 
+    const navigate = useNavigate();
     const [products, setProducts] = useState([]);
+    const { setCounter, setToCard } = useMyContext();
 
     useEffect(() => {
         get(dbRef).then((snapshot) => {
@@ -40,7 +44,10 @@ function ProductsItem(props) {
         });
     }, [])
 
-    const navigate = useNavigate();
+    function addToCardHandler(e){
+        setCounter(prev => Number(prev) + 1);
+        setToCard(e.target);
+    }
 
     return (
         products.map((product) =>
@@ -52,8 +59,8 @@ function ProductsItem(props) {
                 <div className="product-name">{product.name}</div>
                 <div className="product-bottom">
                     <div className="product-price">{product.price}</div>
-                    <div onClick={() => navigate(`/product/${product.id}`)} className="product-show">Show more</div>
-                    <div className="product-add">Add +</div>
+                    <div onClick={() => navigate(`/magazine-react/product/${product.id}`)} className="product-show">Show more</div>
+                    <div onClick={addToCardHandler} className="product-add">Add +</div>
                 </div>
             </div>
         )
