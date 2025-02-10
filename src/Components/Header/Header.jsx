@@ -11,7 +11,9 @@ function Header() {
     return (
         <header>
             <div className="logo animate__animated animate__zoomIn">
-                <a href="/magazine-react/"><img src={logo} alt=""/></a>
+                <NavLink to="/magazine-react/">
+                    <img src={logo} alt=""/>
+                </NavLink>
             </div>
             <nav>
                 <ul>
