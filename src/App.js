@@ -6,11 +6,12 @@ const MyContext = createContext();
 
 function App() {
     const [counter, setCounter] = useState(0);
-    const [card, setToCard] = useState([]);
+    //const [card, setToCard] = useState([]);
 
     return (
         <React.StrictMode>
-            <MyContext.Provider value={{ counter, setCounter, card, setToCard }}>
+            {/*<MyContext.Provider value={{ counter, setCounter, card, setToCard }}>*/}
+            <MyContext.Provider value={{ counter, setCounter }}>
                 <RouterProvider router={router} basename="/magazine-react" />
             </MyContext.Provider>
         </React.StrictMode>

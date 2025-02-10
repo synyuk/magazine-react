@@ -1,0 +1,49 @@
+.basket-wrapper{
+  display: flex;
+  margin-bottom: 125px;
+}
+.product-basket{
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 10px;
+  &-image{
+    img{
+      max-height: 100px;
+      margin-right: 25px;
+    }
+
+  }
+  &-body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+  }
+  &-company{
+    display: block;
+    padding-right: 40px;
+  }
+  &-name{
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 40px;
+  }
+  &-price{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    font-weight: bold;
+    font-size: 20px;
+    color: orange;
+    flex-grow: 1;
+  }
+  &-delete{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+}
