@@ -1,37 +1,47 @@
-.basket-wrapper{
+.basket-wrapper {
   display: flex;
   margin-bottom: 125px;
 }
-.product-basket{
+
+.container {
+  padding: 32px;
+}
+
+.product-basket {
   display: flex;
   border: 1px solid #000;
   border-radius: 16px;
   padding: 15px;
   margin-bottom: 10px;
-  &-image{
-    img{
+
+  &-image {
+    img {
       max-height: 100px;
       margin-right: 25px;
     }
 
   }
-  &-body{
+
+  &-body {
     display: flex;
     flex-direction: column;
     position: relative;
     flex-grow: 1;
   }
-  &-company{
+
+  &-company {
     display: block;
     padding-right: 40px;
   }
-  &-name{
+
+  &-name {
     display: flex;
     font-weight: bold;
     font-size: 18px;
     padding-right: 40px;
   }
-  &-price{
+
+  &-price {
     display: flex;
     justify-content: flex-end;
     align-items: end;
@@ -40,10 +50,27 @@
     color: orange;
     flex-grow: 1;
   }
-  &-delete{
+
+  &-delete {
     position: absolute;
     right: 10px;
     top: 10px;
     cursor: pointer;
+  }
+}
+
+.basket-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .price-total {
+    font-size: 16px;
+    font-weight: bold;
+    span{
+      font-size: 24px;
+    };
+  }
+  .main-btn {
+    margin-top: 10px;
   }
 }

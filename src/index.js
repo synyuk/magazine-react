@@ -12,3 +12,11 @@ root.render(
         <App />
     </Provider>
 );
+
+
+const mass = ['$129','$9','$12'];
+let summ = 0;
+for (let i = 0; i < mass.length; i++) {
+    summ += eval(mass[i].toString().slice(1));
+}
+//console.log(summ);
