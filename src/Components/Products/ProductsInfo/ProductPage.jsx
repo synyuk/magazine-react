@@ -3,13 +3,17 @@ import {useParams} from "react-router-dom";
 import { ref, get } from "firebase/database";
 import { database } from "../../../firebase";
 import { useState, useEffect } from "react";
+import {addToCard} from "../../../store/reducers/basketReducer";
+import {useDispatch} from "react-redux";
+import {useMyContext} from "../../../App";
 
 
 function ProductPage() {
     const dbRef = ref(database, '/products/');
     const {id} = useParams();
     const [product, setProducts] = useState([]);
-    console.log(product)
+    const dispatch = useDispatch();
+    const { setCounter } = useMyContext();
 
     useEffect(() => {
         get(dbRef).then((snapshot) => {
@@ -26,12 +30,19 @@ function ProductPage() {
         });
     }, [])
 
+    function addToCardHandler(e){
+        const productId = e.target.closest('.product-wrapper').getAttribute('data-id');
+        dispatch(addToCard(productId));
+        setCounter(prev => Number(prev) + 1);
+    }
+
     return (
-        <section>
+        <section className="product-page">
             <h1>{product.name}</h1>
-            <div className="product-wrapper">
+            <div className="product-wrapper" data-id={product.id}>
                 <div className="product-item-pic">
                     <img src={`${process.env.PUBLIC_URL}/${product.pic}`} alt={product.name} />
+                    <button onClick={addToCardHandler} className="main-btn">Add +</button>
                 </div>
                 <div className="product-description">
                     <p>{product.description}</p>
