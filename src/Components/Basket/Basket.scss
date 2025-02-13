@@ -8,16 +8,21 @@
 }
 
 .product-basket {
-  display: flex;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
   border: 1px solid #000;
   border-radius: 16px;
   padding: 15px;
   margin-bottom: 10px;
 
   &-image {
+    grid-column: 1;
     img {
       max-height: 100px;
-      margin-right: 25px;
+      margin: 0 auto;
+      display: block;
     }
 
   }
@@ -26,7 +31,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    flex-grow: 1;
+    grid-column: 2;
   }
 
   &-company {
@@ -72,5 +77,29 @@
   }
   .main-btn {
     margin-top: 10px;
+  }
+}
+.product-basket-footer{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-column: 1 / -1;
+  margin-top: 15px;
+  .counter-wrapper{
+    display: flex;
+    justify-content: center;
+    button{
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .counter{
+      min-width: 30px;
+      text-align: center;
+    }
   }
 }
