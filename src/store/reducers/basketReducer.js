@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import products from "../../Components/Products/Products";
 
 export const basketReducer = createSlice({
     name: 'basket',
