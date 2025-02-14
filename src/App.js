@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useEffect, useState} from "react";
+import React, {createContext, useContext, useState} from "react";
 import {RouterProvider} from "react-router-dom";
 import router from "./routes/routes";
 
@@ -8,11 +8,9 @@ function App() {
     const [counter, setCounter] = useState(0);
 
     return (
-        <React.StrictMode>
-            <MyContext.Provider value={{ counter, setCounter }}>
-                <RouterProvider router={router} basename="/magazine-react" />
-            </MyContext.Provider>
-        </React.StrictMode>
+        <MyContext.Provider value={{ counter, setCounter }}>
+            <RouterProvider router={router} basename="/magazine-react" />
+        </MyContext.Provider>
     );
 }
 
