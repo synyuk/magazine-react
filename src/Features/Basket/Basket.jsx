@@ -1,10 +1,10 @@
 import './Basket.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import {removeAllFromCards} from '../../store/reducers/basketReducer';
+import {removeAllFromCards} from './store/basketReducer';
 import { useState, useEffect } from "react";
 import { ref, get } from "firebase/database";
-import { database } from "../../firebase";
-import ProductInBasket from "./ProductInBasket/ProductInBasket";
+import { database } from "../../services/firebase";
+import ProductInBasket from "./components/ProductInBasket";
 import {useMyContext} from "../../App";
 
 function Basket() {
@@ -25,7 +25,7 @@ function Basket() {
                     count: item.count,
                     id: item.id,
                 }));
-                const priceMass = selectedProducts.map(item => item.price.slice(1)*item.count);
+                const priceMass = selectedProducts.map(item => item.price*item.count);
                 let summ = 0;
                 for (let i = 0; i < priceMass.length; i++) {
                     summ += priceMass[i];

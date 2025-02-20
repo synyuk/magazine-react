@@ -1,4 +1,4 @@
-import {decrementProduct, incrementProducts, removeToCard} from "../../../store/reducers/basketReducer";
+import {decrementProduct, incrementProducts, removeToCard} from "../store/basketReducer";
 import {useDispatch} from "react-redux";
 import { useMyContext } from "../../../App";
 
@@ -48,7 +48,7 @@ const ProductInBasket = (product) =>  {
                     <div className="counter">{product.product.count}</div>
                     <button onClick={incrementHendler} className="count-increment">+</button>
                 </div>
-                <div className="product-basket-price">{product.product.price}</div>
+                <div className="product-basket-price">${product.product.price}</div>
             </div>
         </div>
     )

@@ -25,3 +25,8 @@
     width: 150px;
   }
 }
+.productWrapper{
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 15px;
+}

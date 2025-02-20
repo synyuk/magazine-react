@@ -1,0 +1,18 @@
+.category-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  a{
+    display: flex;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    transition: 0.3s all;
+    &:hover{
+      scale: 1.03;
+    }
+  }
+}
