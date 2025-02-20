@@ -1,0 +1,101 @@
+.basket-wrapper {
+  display: flex;
+  margin-bottom: 125px;
+}
+
+.container {
+  padding: 32px;
+}
+
+.product-basket {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.product-basket-image {
+  grid-column: 1;
+}
+.product-basket-image img {
+  max-height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+.product-basket-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-column: 2;
+}
+.product-basket-company {
+  display: block;
+  padding-right: 40px;
+}
+.product-basket-name {
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 40px;
+}
+.product-basket-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  font-weight: bold;
+  font-size: 20px;
+  color: orange;
+  flex-grow: 1;
+}
+.product-basket-delete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.basket-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-footer-wrapper .price-total {
+  font-size: 16px;
+  font-weight: bold;
+}
+.basket-footer-wrapper .price-total span {
+  font-size: 24px;
+}
+.basket-footer-wrapper .main-btn {
+  margin-top: 10px;
+}
+
+.product-basket-footer {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-column: 1/-1;
+  margin-top: 15px;
+}
+.product-basket-footer .counter-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.product-basket-footer .counter-wrapper button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.product-basket-footer .counter-wrapper .counter {
+  min-width: 30px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Basket.css.map */
