@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/magazine-react/static/css/main.7f57a326.css",
-    "main.js": "/magazine-react/static/js/main.ee644fa2.js",
+    "main.js": "/magazine-react/static/js/main.092cd47a.js",
     "static/media/clock.webp": "/magazine-react/static/media/clock.d60c78e25961194f11f7.webp",
     "static/media/diagram.png": "/magazine-react/static/media/diagram.6bbed40ac49e16cf7b6a.png",
     "static/media/customer.svg": "/magazine-react/static/media/customer.ae72f0eb875dbfa1c3fc6235a420b402.svg",
@@ -13,10 +13,10 @@
     "static/media/arrow.svg": "/magazine-react/static/media/arrow.a2ea4d7a8bffb739aa6a.svg",
     "static/media/arrow-right.svg": "/magazine-react/static/media/arrow-right.fb26bb8e23e9180f9c7d.svg",
     "main.7f57a326.css.map": "/magazine-react/static/css/main.7f57a326.css.map",
-    "main.ee644fa2.js.map": "/magazine-react/static/js/main.ee644fa2.js.map"
+    "main.092cd47a.js.map": "/magazine-react/static/js/main.092cd47a.js.map"
   },
   "entrypoints": [
     "static/css/main.7f57a326.css",
-    "static/js/main.ee644fa2.js"
+    "static/js/main.092cd47a.js"
   ]
 }
