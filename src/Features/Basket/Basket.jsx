@@ -17,24 +17,20 @@ function Basket() {
 
     useEffect(() => {
         get(dbRef).then((snapshot) => {
-            if (snapshot.exists()) {
-                const allProducts = snapshot.val();
-                console.log(productsInBasket);
-                const selectedProducts = productsInBasket.map((item) => ({
-                    ...allProducts[item.id],
-                    count: item.count,
-                    id: item.id,
-                }));
-                const priceMass = selectedProducts.map(item => item.price*item.count);
-                let summ = 0;
-                for (let i = 0; i < priceMass.length; i++) {
-                    summ += priceMass[i];
-                }
-                setProducts(selectedProducts);
-                setPrice(summ.toFixed(2));
-            } else {
-                console.log("No data available");
+            const allProducts = snapshot.val();
+            console.log(productsInBasket);
+            const selectedProducts = productsInBasket.map((item) => ({
+                ...allProducts[item.id],
+                count: item.count,
+                id: item.id,
+            }));
+            const priceMass = selectedProducts.map(item => item.price*item.count);
+            let summ = 0;
+            for (let i = 0; i < priceMass.length; i++) {
+                summ += priceMass[i];
             }
+            setProducts(selectedProducts);
+            setPrice(summ.toFixed(2));
         }).catch((error) => {
             console.error(error);
         });
