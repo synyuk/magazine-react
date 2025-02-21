@@ -1,24 +1,29 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {useEffect} from "react";
+import {useDispatch} from "react-redux";
 import { ref, get } from "firebase/database";
 import { database } from "../../services/firebase";
-import { setProducts, sortProducts } from "./store/productsReducer";
+import { setProducts, sortProducts, showCategory } from "./store/productsReducer";
 import ProductsItem from "./componenst/ProductsItem/ProductsItem";
 import Category from "./componenst/Category/Category";
 import s from "./Products.module.scss";
+import { useParams } from "react-router-dom";
 
 function Products() {
     const dispatch = useDispatch();
+    const category = useParams().category;
+    //console.log(category);
 
     useEffect(() => {
-        const dbRef = ref(database, "/products/");
+        const dbRef = ref(database, "/");
         get(dbRef).then(snapshot => {
-            //console.log(snapshot.val());
             dispatch(setProducts(snapshot.val()));
+            if (category) {
+                dispatch(showCategory(category));
+            }
         }).catch(error => {
             console.error(error);
         });
-    }, [dispatch]);
+    }, [category]);
 
     function changeProductListHandler(e) {
         dispatch(sortProducts(e.target.value));

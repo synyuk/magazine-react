@@ -19,7 +19,19 @@ const router = createBrowserRouter([
                     <Products />
                     <Footer />
                 </>
-            )
+            ),
+            children: [
+                {
+                    path: "/magazine-react/:category",
+                    element:
+                        <>
+                            <Header />
+                            <Hero />
+                            <Products />
+                            <Footer />
+                        </>
+                },
+            ]
         },
         {
             path: "/magazine-react/product",

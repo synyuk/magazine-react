@@ -82,6 +82,7 @@
   img{
     max-height: 159px;
     margin: 0 auto;
+    max-width: 90%;
   }
 }
 
@@ -128,6 +129,7 @@
   margin-left: auto;
   cursor: pointer;
   transition: 0.3s all;
+  height: max-content;
   &:hover{
     background: #4a8a93;
     color: #fff;

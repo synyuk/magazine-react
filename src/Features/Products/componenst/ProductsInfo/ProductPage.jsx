@@ -9,7 +9,7 @@ import {useMyContext} from "../../../../App";
 import Preloader from "../../../../Common/Preloader/Preloader";
 
 function ProductPage() {
-    const dbRef = ref(database, '/products/');
+    const dbRef = ref(database, '/');
     const {id} = useParams();
     const [product, setProducts] = useState([]);
     const dispatch = useDispatch();

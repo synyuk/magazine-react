@@ -9,7 +9,7 @@ import {useMyContext} from "../../App";
 
 function Basket() {
     const dispatch = useDispatch();
-    const dbRef = ref(database, '/products/');
+    const dbRef = ref(database, '/');
     const productsInBasket = useSelector((state) => state.basket.products);
     const [products, setProducts] = useState([]);
     const [price, setPrice] = useState(0);

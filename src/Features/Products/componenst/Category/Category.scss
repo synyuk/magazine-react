@@ -1,18 +1,37 @@
 .category-wrapper{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 20px;
+  h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
   a{
+    width: max-content;
+    position: relative;
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     text-decoration: none;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid lightgray;
-    transition: 0.3s all;
-    &:hover{
-      scale: 1.03;
+
+    padding-right: 25px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -7.5px;
+      right: 0;
+      height: 15px;
+      width: 15px;
+      background: url("../../../../assets/img/icons/arrow-right.svg") no-repeat;
+      background-size: cover;
+      transition: 0.3s all;
+    }
+    &:hover:before{
+      transform: translateX(5px);
     }
   }
 }
