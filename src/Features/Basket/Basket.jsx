@@ -18,12 +18,13 @@ function Basket() {
     useEffect(() => {
         get(dbRef).then((snapshot) => {
             const allProducts = snapshot.val();
-            console.log(productsInBasket);
+            //console.log(productsInBasket);
             const selectedProducts = productsInBasket.map((item) => ({
                 ...allProducts[item.id],
                 count: item.count,
                 id: item.id,
             }));
+            //console.log(selectedProducts);
             const priceMass = selectedProducts.map(item => item.price*item.count);
             let summ = 0;
             for (let i = 0; i < priceMass.length; i++) {

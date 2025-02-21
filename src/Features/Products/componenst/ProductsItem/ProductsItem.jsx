@@ -6,20 +6,15 @@ import { addToCard } from "../../../Basket/store/basketReducer";
 
 function ProductsItem() {
     const products = useSelector(state => state.product.products);
+    console.log(products);
     const navigate = useNavigate();
     const { setCounter } = useMyContext();
     const dispatch = useDispatch();
-    const basket = useSelector(state => state.basket.products);
 
     function addToCardHandler(e) {
         const productId = e.target.closest(".product").getAttribute("data-id");
         setCounter(prev => Number(prev) + 1);
         dispatch(addToCard(productId));
-    }
-
-    function getProductCount(id) {
-        const product = basket.find(products => products.id === id);
-        return product ? product.count : 0;
     }
 
     return (
@@ -37,9 +32,6 @@ function ProductsItem() {
                     </div>
                     <div onClick={addToCardHandler} className="product-add">
                         Add +
-                        {getProductCount(product.id) > 0 && (
-                            <span className="product-count">{getProductCount(product.id)}</span>
-                        )}
                     </div>
                 </div>
             </div>

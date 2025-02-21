@@ -9,7 +9,7 @@ const ProductInBasket = (product) =>  {
 
     const decrementHendler = (e) => {
         const productId = e.target.closest(".product-basket").getAttribute("data-id");
-        console.log(productId);
+        //console.log(productId);
         dispatch(decrementProduct(productId));
         setCounter(prev => Number(prev) - 1 );
     }
