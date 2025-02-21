@@ -3,10 +3,21 @@ import logo from "../../assets/img/logo.svg";
 import basketIcon from "../../assets/img/icons/basket-icon.svg";
 import { NavLink } from "react-router-dom";
 import { useMyContext } from "../../App";
+import {useEffect} from "react";
 
 function Header() {
 
     const { counter } = useMyContext();
+
+    useEffect(() => {
+        //Mobile menu
+        const menuBtn = document.querySelector("#mobile-menu");
+        const menu = document.querySelector("header nav");
+        menuBtn.addEventListener("click", function () {
+            this.classList.toggle("active");
+            menu.classList.toggle("open");
+        })
+    }, []);
 
     return (
         <header>

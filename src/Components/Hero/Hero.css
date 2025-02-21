@@ -39,6 +39,17 @@
     justify-content: center;
   }
 }
+@media (max-width: 767px) {
+  .hero-text .cta {
+    gap: 16px;
+  }
+  .hero-text .cta button {
+    padding: 16px;
+  }
+  .hero-text .cta button:before {
+    display: none;
+  }
+}
 
 .hero-image {
   position: relative;
@@ -49,6 +60,11 @@
 .hero-image img {
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 767px) {
+  .hero-image img {
+    max-width: 200px;
+  }
 }
 .hero-image-diagram {
   position: absolute;
@@ -132,6 +148,11 @@
     margin-left: auto;
   }
 }
+@media (max-width: 767px) {
+  .stats .stats-item {
+    gap: 10px;
+  }
+}
 .stats .stats-item .stats-icon {
   display: flex;
   justify-content: center;
@@ -154,6 +175,11 @@
 .stats .stats-item .stats-count {
   font-weight: 600;
   font-size: 30px;
+}
+@media (max-width: 767px) {
+  .stats .stats-item .stats-count {
+    font-size: 20px;
+  }
 }
 .stats .stats-item .stats-name {
   font-weight: 500;

@@ -1,7 +1,15 @@
 import "./Footer.scss"
 import logo from "../../assets/img/logo.svg";
+import {useEffect} from "react";
 
 function Footer() {
+
+    useEffect(() => {
+        //Current date
+        const currentDate = document.querySelector("#current-data");
+        currentDate.innerHTML = new Date().getFullYear();
+    }, []);
+
     return (
         <>
             <footer className="footer">

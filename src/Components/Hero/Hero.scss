@@ -32,6 +32,15 @@
   @media (max-width: $tablet) {
     justify-content: center;
   }
+  @media (max-width: $mobile) {
+    gap: 16px;
+    button{
+      padding: 16px;
+      &:before{
+        display: none;
+      }
+    }
+  }
 }
 .hero-image {
   position: relative;
@@ -41,12 +50,18 @@
   img {
     max-width: 100%;
     height: auto;
+    @media (max-width: $mobile) {
+      max-width: 200px;
+    }
   }
   &-diagram{
     position: absolute;
     bottom: -56px;
     right: 0;
     z-index: 1;
+    @media (max-width: $mobile) {
+
+    }
   }
   &-circle-1{
     position: absolute;
@@ -98,10 +113,6 @@
   }
 }
 
-
-
-
-
 .stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -121,6 +132,9 @@
       &:first-child{
         margin-left: auto;
       }
+    }
+    @media (max-width: $mobile) {
+      gap: 10px;
     }
     .stats-icon{
       display: flex;
@@ -142,6 +156,9 @@
     .stats-count{
       font-weight: 600;
       font-size: 30px;
+      @media (max-width: $mobile) {
+        font-size: 20px;
+      }
     }
     .stats-name{
       font-weight: 500;

@@ -18,6 +18,7 @@ body {
 @media (max-width: 1024px) {
   body {
     margin-top: 80px;
+    overflow-x: hidden;
   }
 }
 

@@ -5,6 +5,9 @@ h1{
 .product-wrapper{
   display: flex;
   gap: 30px;
+  @media(max-width: 767px){
+    flex-direction: column;
+  }
 }
 .product-description{
   display: flex;
@@ -13,6 +16,10 @@ h1{
 .product-item-pic{
   img{
     width: 100px;
+    @media(max-width: 767px){
+      display: block;
+      margin: 0 auto 20px auto  ;
+    }
   }
 }
 .product-page{
@@ -21,6 +28,11 @@ h1{
   flex-grow: 1;
   padding-left: 32px;
   padding-right: 32px;
+  @media(max-width: 767px){
+    margin-top: -30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .main-btn{
     height: 20px;
     margin: 10px auto;

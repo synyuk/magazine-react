@@ -1,6 +1,11 @@
 .footer {
   padding: 0 32px;
 }
+@media (max-width: 767px) {
+  .footer {
+    padding: 0;
+  }
+}
 .footer-logo {
   border-bottom: 1px solid #D6D8DD;
   margin-bottom: 20px;

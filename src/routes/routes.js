@@ -8,6 +8,7 @@ import ProductPage from "../Features/Products/componenst/ProductsInfo/ProductPag
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import Basket from "../Features/Basket/Basket";
+import ScrollToTop from "../Components/ScrollToTop/ScrollToTop";
 
 const router = createBrowserRouter([
         {
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
                             <Header />
                             <ProductPage />
                             <Footer />
+                            <ScrollToTop />
                         </>
                 },
             ]
@@ -54,6 +56,7 @@ const router = createBrowserRouter([
                     <Header />
                     <About />
                     <Footer />
+                    <ScrollToTop />
                 </>
         },
         {
@@ -63,6 +66,7 @@ const router = createBrowserRouter([
                     <Header />
                     <Company />
                     <Footer />
+                    <ScrollToTop />
                 </>
 
         },
@@ -73,6 +77,7 @@ const router = createBrowserRouter([
                     <Header />
                     <Blog />
                     <Footer />
+                    <ScrollToTop />
                 </>
         },
         {
@@ -82,6 +87,7 @@ const router = createBrowserRouter([
                     <Header />
                     <Basket />
                     <Footer />
+                    <ScrollToTop />
                 </>
         }
     ]
