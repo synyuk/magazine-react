@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/magazine-react/static/css/main.d50304d6.css",
-    "main.js": "/magazine-react/static/js/main.3ecf8c69.js",
+    "main.css": "/magazine-react/static/css/main.7f57a326.css",
+    "main.js": "/magazine-react/static/js/main.8d9619c9.js",
     "static/media/clock.webp": "/magazine-react/static/media/clock.d60c78e25961194f11f7.webp",
     "static/media/diagram.png": "/magazine-react/static/media/diagram.6bbed40ac49e16cf7b6a.png",
     "static/media/customer.svg": "/magazine-react/static/media/customer.ae72f0eb875dbfa1c3fc6235a420b402.svg",
@@ -12,11 +12,11 @@
     "static/media/arrow-down.svg": "/magazine-react/static/media/arrow-down.31aba6426d0a4244e97f.svg",
     "static/media/arrow.svg": "/magazine-react/static/media/arrow.a2ea4d7a8bffb739aa6a.svg",
     "static/media/arrow-right.svg": "/magazine-react/static/media/arrow-right.fb26bb8e23e9180f9c7d.svg",
-    "main.d50304d6.css.map": "/magazine-react/static/css/main.d50304d6.css.map",
-    "main.3ecf8c69.js.map": "/magazine-react/static/js/main.3ecf8c69.js.map"
+    "main.7f57a326.css.map": "/magazine-react/static/css/main.7f57a326.css.map",
+    "main.8d9619c9.js.map": "/magazine-react/static/js/main.8d9619c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.d50304d6.css",
-    "static/js/main.3ecf8c69.js"
+    "static/css/main.7f57a326.css",
+    "static/js/main.8d9619c9.js"
   ]
 }
